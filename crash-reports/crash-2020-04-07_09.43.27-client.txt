@@ -1,0 +1,190 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 4/7/20 9:43 AM
+Description: Initializing game
+
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider$FMLModTarget.loadMod(FMLJavaModLanguageProvider.java:78) ~[?:28.2] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.buildModContainerFromTOML(ModLoader.java:234) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$buildMods$26(ModLoader.java:214) ~[?:?] {re:classloading}
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.HashMap$EntrySpliterator.forEachRemaining(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.ReferencePipeline.collect(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.ModLoader.buildMods(ModLoader.java:216) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$18(ModLoader.java:173) ~[?:?] {re:classloading}
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:1.8.0_241] {}
+	at java.util.stream.ReferencePipeline.collect(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:175) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$begin$2(ClientModLoader.java:98) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:98) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:454) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:randompatches:RandomPatches Minecraft Transformer,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:365) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:randompatches:RandomPatches Minecraft Transformer,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(SourceFile:155) ~[minecraft-1.14.4-client.jar:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56) ~[forge-1.14.4-28.2.3-launcher.jar:28.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-4.1.0.jar:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:39) [ForgeWrapper-1.4.1.jar:?] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?] {}
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?] {}
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source) ~[?:?] {}
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider$FMLModTarget.loadMod(FMLJavaModLanguageProvider.java:73) ~[?:28.2] {re:classloading}
+	... 45 more
+Caused by: net.minecraftforge.fml.ModLoadingException: Dark Utilities has class loading errors
+§7net/darkhax/bookshelf/item/ItemGroupBase
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.<init>(FMLModContainer.java:77) ~[?:28.2] {re:classloading}
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source) ~[?:?] {}
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider$FMLModTarget.loadMod(FMLJavaModLanguageProvider.java:73) ~[?:28.2] {re:classloading}
+	... 45 more
+Caused by: java.lang.NoClassDefFoundError: net/darkhax/bookshelf/item/ItemGroupBase
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_241] {}
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.<init>(FMLModContainer.java:71) ~[?:28.2] {re:classloading}
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source) ~[?:?] {}
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider$FMLModTarget.loadMod(FMLJavaModLanguageProvider.java:73) ~[?:28.2] {re:classloading}
+	... 45 more
+Caused by: java.lang.ClassNotFoundException: net.darkhax.bookshelf.item.ItemGroupBase
+	at java.lang.ClassLoader.findClass(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_241] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:103) ~[modlauncher-4.1.0.jar:?] {}
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_241] {}
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.<init>(FMLModContainer.java:71) ~[?:28.2] {re:classloading}
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source) ~[?:?] {}
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider$FMLModTarget.loadMod(FMLJavaModLanguageProvider.java:73) ~[?:28.2] {re:classloading}
+	... 45 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider$FMLModTarget.loadMod(FMLJavaModLanguageProvider.java:78)
+	at net.minecraftforge.fml.ModLoader.buildModContainerFromTOML(ModLoader.java:234)
+	at net.minecraftforge.fml.ModLoader.lambda$buildMods$26(ModLoader.java:214)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.HashMap$EntrySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at net.minecraftforge.fml.ModLoader.buildMods(ModLoader.java:216)
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$18(ModLoader.java:173)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:175)
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$begin$2(ClientModLoader.java:98)
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:115)
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:98)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:454)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:365)
+	at net.minecraft.client.main.Main.main(SourceFile:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56)
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72)
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81)
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65)
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.14.4
+	Minecraft Version ID: 1.14.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 8895656904 bytes (8483 MB) / 11878268928 bytes (11328 MB) up to 12884901888 bytes (12288 MB)
+	CPUs: 8
+	JVM Flags: 9 total; -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms6144m -Xmx12288m
+	ModLauncher: 4.1.0+62+5bfa59b
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-1.0.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-1.0.5-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 28.2
+	Forge: net.minecraftforge:28.2.3
+	FML Language Providers: 
+		javafml@28.2
+		minecraft@1
+	Mod List: ~~ERROR~~ NullPointerException: null
+	Launched Version: MultiMC5
+	LWJGL: 3.2.2 build 10
+	OpenGL: GeForce RTX 2070 SUPER/PCIe/SSE2 GL version 4.6.0 NVIDIA 442.74, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: ~~ERROR~~ NullPointerException: null
+	CPU: 8x Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz

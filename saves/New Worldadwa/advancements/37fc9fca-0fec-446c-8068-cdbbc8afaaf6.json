@@ -1,0 +1,157 @@
+{
+  "autumnity:recipes/maple_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:biomesoplenty/root": {
+    "criteria": {
+      "orchard": "2020-04-07 13:46:13 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/magic_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/redwood_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "druidcraft:druidcraft/darkwood_forest": {
+    "criteria": {
+      "druidcraft:darkwood_forest": "2020-04-07 13:48:54 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/ethereal_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/mahogany_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "tombstone:adventure/root": {
+    "criteria": {
+      "auto": "2020-04-07 13:46:02 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/umbran_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/willow_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/palm_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:biomesoplenty/all_biomes": {
+    "criteria": {
+      "floodplain": "2020-04-07 13:47:56 -0700",
+      "orchard": "2020-04-07 13:46:13 -0700",
+      "redwood_forest": "2020-04-07 13:47:27 -0700",
+      "cherry_blossom_grove": "2020-04-07 13:52:46 -0700",
+      "grassland": "2020-04-07 13:49:06 -0700",
+      "rainforest": "2020-04-07 13:50:07 -0700"
+    },
+    "done": false
+  },
+  "biomesoplenty:recipes/transportation/dead_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/hellbark_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/fir_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/transportation/jacaranda_boat": {
+    "criteria": {
+      "in_water": "2020-04-07 13:48:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2020-04-07 13:49:24 -0700",
+      "minecraft:river": "2020-04-07 13:48:33 -0700",
+      "minecraft:lukewarm_ocean": "2020-04-07 13:51:17 -0700",
+      "minecraft:swamp": "2020-04-07 13:48:48 -0700",
+      "minecraft:savanna": "2020-04-07 13:54:04 -0700",
+      "minecraft:plains": "2020-04-07 13:46:02 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 1976
+}

@@ -1,0 +1,30 @@
+
+[general]
+	#Exhaustion multiplier per air hop compared to normal jumps.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Hop Exhaustion" = 4.0
+	#Summon a small particle cloud at every position the player air hops from.
+	"Summon Particle Cloud" = true
+	#Amount of food the player needs to surpass in case "Disable On Hungry" is enabled.
+	#Range: 0 ~ 20
+	"Food Threshold" = 6
+	#When wearing an elytra; don't use it when there are air hops left. Sneaking inverts this behaviour in-game.
+	"Prioritise Over Elytra" = false
+	#Block the air hop enchantment from functioning when the player is too hungry.
+	"Disable On Hungry" = false
+	#Reset the fall distance on every air hop. Otherwise each air hop only decreases it by the default jump height.
+	"Reset Fall Distance" = false
+
+[enchantment]
+	#Defines the piece of armor this enchantment can be applied to. If "ALL" is used, the levels on all armor pieces will be combined.
+	#Allowed Values: ALL, HELMET, CHESTPLATE, LEGGINGS, BOOTS
+	"Enchantment Type" = "LEGGINGS"
+	#Maximum level for this enchantment. Each level provides one additional air hop.
+	#Range: > 0
+	"Maximum Level" = 3
+	#Makes the enchantment unobtainable from enchanting tables. It is only available on items from loot chests, fishing and villager trading.
+	"Treasure Enchantment" = true
+	#Rarity of this enchantment.
+	#Allowed Values: COMMON, UNCOMMON, RARE, VERY_RARE
+	"Enchantment Rarity" = "RARE"
+

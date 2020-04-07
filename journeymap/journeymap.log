@@ -1,0 +1,79 @@
+[11:40:40] [Client thread/INFO] [JMLogger] JourneyMap log initialized.
+[11:40:40] [Client thread/INFO] [JourneymapClient] initialize ENTER
+[11:40:40] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[11:40:40] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[11:40:40] [Client thread/INFO] [?] Version: JourneyMap @MCVERSION@-5.7.0dev, built with Forge @FORGEVERSION@
+Forge: 28.2.3
+Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_us, locale=en_us
+Features: 
+	RadarPlayers : singleplayer = true , multiplayer = true
+	RadarAnimals : singleplayer = true , multiplayer = true
+	RadarMobs : singleplayer = true , multiplayer = true
+	RadarVillagers : singleplayer = true , multiplayer = true
+	MapTopo : singleplayer = true , multiplayer = true
+	MapSurface : singleplayer = true , multiplayer = true
+	MapCaves : singleplayer = true , multiplayer = true
+MiniMapProperties{state=Valid, file=journeymap.minimap.config, configVersion=5.7.0dev, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=jm.theme.labelsource.gametime, sizePercent=30, showDayNight=true, info3Label=jm.theme.labelsource.location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=jm.common.entity_display.small_dots, showReticle=true, orientation=jm.minimap.orientation.north, systemTimeRealFormat=HH:mm:ss, shape=jm.minimap.shape_circle, showSelf=true, info4Label=jm.theme.labelsource.biome, locationFormat=xzyv, playerDisplay=jm.common.entity_display.small_dots, showGrid=true, reticleOrientation=jm.minimap.orientation.compass, gameTimeRealFormat=HH:mm:ss, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=jm.minimap.position_topright, info1Label=jm.theme.labelsource.blank, fontScale=1}
+MiniMapProperties{state=Valid, file=journeymap.minimap2.config, configVersion=5.7.0dev, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=jm.theme.labelsource.gametime, sizePercent=30, showDayNight=true, info3Label=jm.theme.labelsource.location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=jm.common.entity_display.small_dots, showReticle=true, orientation=jm.minimap.orientation.north, systemTimeRealFormat=HH:mm:ss, shape=jm.minimap.shape_rectangle, showSelf=true, info4Label=jm.theme.labelsource.biome, locationFormat=xzyv, playerDisplay=jm.common.entity_display.small_dots, showGrid=true, reticleOrientation=jm.minimap.orientation.compass, gameTimeRealFormat=HH:mm:ss, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=jm.minimap.position_topright, info1Label=jm.theme.labelsource.blank, fontScale=1}
+FullMapProperties{state=Valid, file=journeymap.fullmap.config, configVersion=5.7.0dev, mobDisplay=jm.common.entity_display.small_dots, zoomLevel=0, showPlayers=true, showSelf=true, locationFormat=xzyv, playerDisplay=jm.common.entity_display.small_dots, showGrid=true, showEntityNames=true, showPlayerHeading=true, showVillagers=true, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showKeys=true, showWaypointLabels=true, locationFormatVerbose=true, showMobs=true, showPets=true, fontScale=1, preferredMapType=day}
+WaypointProperties{state=Valid, file=journeymap.waypoint.config, configVersion=5.7.0dev, autoRemoveDeathpointDistance=2, createDeathpoints=true, showName=true, dateFormat=MM-dd-yyyy, autoRemoveDeathpoints=false, maxDistance=0, autoHideLabel=true, teleportCommand=/tp {name} {x} {y} {z}, showStaticBeam=true, minDistance=4, timeFormat=HH:mm:ss, boldLabel=false, textureSmall=true, showDeathpointlabel=true, showDistance=true, showRotatingBeam=true, fontScale=2, showTexture=true, managerEnabled=true, beaconEnabled=true}
+WebMapProperties{state=Valid, file=journeymap.webmap.config, configVersion=5.7.0dev, zoomLevel=0, showWaypoints=true, showCaves=true, showSelf=true, port=8080, showGrid=true, showEntityNames=true, enabled=false, preferredMapType=day}
+CoreProperties{state=Valid, file=journeymap.core.config, configVersion=5.7.0dev, verboseColorPalette=false, maxPlayersData=32, mapSurfaceAboveCaves=true, optionsManagerViewed=null, announceMod=true, colorPassive=#bbbbbb, renderOverlayEventTypeName=ALL, mapBlendWater=false, renderDistanceSurfaceMax=7, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, revealShape=jm.minimap.shape_circle, alwaysMapSurface=false, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, browserPoll=2000, mapBlendFoliage=true, mappingEnabled=true, colorPlayer=#ffffff, tileHighDisplayQuality=true, cacheVillagersData=2200, logLevel=INFO, maxVillagersData=32, maxAnimalsData=32, mapTransparency=true, tileRenderType=1, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=3, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, cacheMobsData=3000, cachePlayerData=1000, splashViewed=null, colorHostile=#ff0000, cacheAnimalsData=3100, themeName=OceanMonument, mapCaveLighting=true, renderDelay=2, renderOverlayPreEvent=true, autoMapPoll=2000}
+[11:40:40] [Client thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.5-SNAPSHOT
+[11:40:40] [Client thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[11:40:40] [Client thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
+[11:40:40] [Client thread/DEBUG] [JourneymapClient] postInitialize ENTER
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.KeyEventHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.ChatEventHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.StateTickHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WorldEventHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WaypointBeaconHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.TextureAtlasHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.MiniMapOverlayHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.PlayerConnectHandler
+[11:40:40] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.world.ChunkMonitor
+[11:40:40] [Client thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
+[11:40:40] [Client thread/TRACE] [ThemeLoader] Initializing themes ...
+[11:40:41] [Client thread/INFO] [ThemeLoader] Preloaded theme textures: 73
+[11:40:41] [Client thread/DEBUG] [JourneymapClient] postInitialize EXIT, elapsed§8 count §r1§8 avg §r573.99§8ms§r
+[11:41:44] [Netty Local Client IO #0/INFO] [PacketRegistry] Dev Mode?
+[11:41:44] [Netty Server IO #1/INFO] [PacketRegistry] Dev Mode?
+[11:41:49] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[11:41:49] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[11:41:49] [Client thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for biomesoplenty
+[11:41:49] [Client thread/INFO] [WaypointStore] Loaded 0 waypoints from F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test\waypoints
+[11:41:50] [Client thread/INFO] [JourneymapClient] Mapping started in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test\DIM0. Memory: 12288MB total, 6675MB free 
+[11:42:18] [Client thread/INFO] [ChatLog] JourneyMap: Press [J]
+[11:43:13] [Client thread/INFO] [JourneymapClient] Mapping halted in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\mp\offline\DIM0
+[11:43:42] [Netty Local Client IO #1/INFO] [PacketRegistry] Dev Mode?
+[11:43:42] [Netty Server IO #3/INFO] [PacketRegistry] Dev Mode?
+[11:43:45] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[11:43:45] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[11:43:45] [Client thread/INFO] [WaypointStore] Loaded 0 waypoints from F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\waypoints
+[11:43:45] [Client thread/INFO] [JourneymapClient] Mapping started in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\DIM0. Memory: 12288MB total, 9334MB free 
+[12:46:05] [Client thread/INFO] [JourneymapClient] Mapping halted in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\DIM0
+[12:46:07] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[12:46:07] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[12:46:08] [Client thread/INFO] [WaypointStore] Loaded 0 waypoints from F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\waypoints
+[12:46:08] [Client thread/INFO] [JourneymapClient] Mapping started in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\DIM-1. Memory: 12288MB total, 7507MB free 
+[12:50:14] [Client thread/INFO] [StateTickHandler] TextComponent{text='kilobyt3', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}} died at BlockPos{x=761, y=65, z=690}. Deathpoints enabled: true. Deathpoint created: true
+[12:50:15] [Client thread/INFO] [JourneymapClient] Mapping halted in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\DIM-1
+[12:50:16] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[12:50:16] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[12:50:16] [Client thread/INFO] [WaypointStore] Loaded 1 waypoints from F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\waypoints
+[12:50:16] [Client thread/INFO] [JourneymapClient] Mapping started in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\test ~1~\DIM0. Memory: 12288MB total, 6605MB free 
+[13:39:50] [Client thread/INFO] [JourneymapClient] Mapping halted in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\mp\offline\DIM0
+[13:40:15] [Netty Local Client IO #2/INFO] [PacketRegistry] Dev Mode?
+[13:40:15] [Netty Server IO #5/INFO] [PacketRegistry] Dev Mode?
+[13:40:17] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[13:40:17] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[13:40:17] [Client thread/INFO] [WaypointStore] Loaded 0 waypoints from F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\New Worldadadawd\waypoints
+[13:40:17] [Client thread/INFO] [JourneymapClient] Mapping started in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\New Worldadadawd\DIM0. Memory: 12288MB total, 7962MB free 
+[13:44:55] [Client thread/INFO] [JourneymapClient] Mapping halted in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\mp\offline\DIM0
+[13:46:01] [Netty Local Client IO #3/INFO] [PacketRegistry] Dev Mode?
+[13:46:01] [Netty Server IO #7/INFO] [PacketRegistry] Dev Mode?
+[13:46:03] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[13:46:03] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[13:46:03] [Client thread/INFO] [WaypointStore] Loaded 0 waypoints from F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\New Worldadwa\waypoints
+[13:46:03] [Client thread/INFO] [JourneymapClient] Mapping started in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\sp\New Worldadwa\DIM0. Memory: 12288MB total, 6363MB free 
+[13:55:15] [Client thread/INFO] [JourneymapClient] Mapping halted in F:\MINECRAFT\MultiMC\instances\Aria\.minecraft\journeymap\data\mp\offline\DIM0
