@@ -309,7 +309,7 @@
 		#Range: > 0
 		vein_size = 8
 		#The chance for a vein to spawn (relative to 1)
-		#Range: 0.0 ~ 0.0
+		#Range: 0.0 ~ 1.0
 		veins_per_chunk = 1.0
 		#Set this to true to allow retro-generation of copper Ore.
 		retrogen_enable = false

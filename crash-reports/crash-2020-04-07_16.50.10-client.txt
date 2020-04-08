@@ -1,0 +1,251 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 4/7/20 4:50 PM
+Description: Unexpected error
+
+java.lang.ExceptionInInitializerError: null
+	at svenhjol.charm.base.CharmAsmHooks.handleMusicTick(CharmAsmHooks.java:65) ~[?:1.14.4-1.5.4] {re:classloading}
+	at net.minecraft.client.audio.MusicTicker.func_73660_a(SourceFile) ~[?:?] {re:classloading,xf:fml:charm:MusicTickerTick,xf:fml:charm:MusicTickerStop,xf:fml:charm:MusicTickerPlaying}
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1351) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:randompatches:RandomPatches Minecraft Transformer,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:869) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:randompatches:RandomPatches Minecraft Transformer,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:384) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:randompatches:RandomPatches Minecraft Transformer,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(SourceFile:155) ~[minecraft-1.14.4-client.jar:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56) ~[forge-1.14.4-28.2.3-launcher.jar:28.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-4.1.0.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-4.1.0.jar:?] {re:classloading}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-4.1.0.jar:?] {re:classloading}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:39) [ForgeWrapper-1.4.1.jar:?] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_241] {}
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?] {}
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?] {}
+Caused by: java.lang.NullPointerException
+	at svenhjol.meson.Meson.<init>(Meson.java:34) ~[?:1.14.4-1.5.4] {re:classloading}
+	at svenhjol.meson.Meson.<clinit>(Meson.java:27) ~[?:1.14.4-1.5.4] {re:classloading}
+	... 25 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.14.4
+	Minecraft Version ID: 1.14.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 9935098600 bytes (9474 MB) / 12079595520 bytes (11520 MB) up to 12884901888 bytes (12288 MB)
+	CPUs: 8
+	JVM Flags: 9 total; -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms6144m -Xmx12288m
+	ModLauncher: 4.1.0+62+5bfa59b
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-1.0.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-1.0.5-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.14.4-28.2.3-launcher.jar fml TRANSFORMATIONSERVICE 
+		/MixinBootstrap-1.0.2.jar mixinbootstrap TRANSFORMATIONSERVICE 
+		/MixinBootstrap-1.0.2.jar mixin PLUGINSERVICE 
+		/MixinBootstrap-1.0.2.jar mixinbootstrap PLUGINSERVICE 
+	FML: 28.2
+	Forge: net.minecraftforge:28.2.3
+	FML Language Providers: 
+		javafml@28.2
+		minecraft@1
+		kotlinfml@1.4.0
+	Mod List: 
+		enchantedbookredesign-1.1.jar Enchanted Book Redesign {enchantedbookredesign@1.1 NONE}
+		NetherPortalFix_1.14.4-7.0.0.jar NetherPortalFix {netherportalfix@7.0.0 NONE}
+		decorative_blocks_compat_1.jar Decorative Blocks Compat {decorative_blocks_compat@1.0 NONE}
+		curiousshulkerboxes-FORGE-1.14.4-1.0.0.2.jar Curious Shulker Boxes {curiousshulkerboxes@FORGE-1.14.4-1.0.0.2 NONE}
+		vilnames_1.14-2.0.jar Villager Names {vilnames@2.0 NONE}
+		Uppers-0.1.11.jar Uppers {uppers@0.1.11 NONE}
+		KleeSlabs_1.14.4-7.4.8.jar KleeSlabs {kleeslabs@7.4.8 NONE}
+		rsgauges-1.14.4-1.2.2.jar Gauges and Switches {rsgauges@1.2.2 NONE}
+		findme-1.14.4-1.1.0.13.jar Find Me {findme@NONE NONE}
+		rftoolsbase-1.14-0.0.12-alpha.jar RFToolsBase {rftoolsbase@1.14-0.0.12-alpha NONE}
+		BetterCaves-1.14.4-1.1.1.jar YUNG's Better Caves {bettercaves@1.14.4-1.1.1 NONE}
+		ForgeEndertech-1.14.4-5.2.1.1-build.0079.jar Forge Endertech {forgeendertech@5.2.1.1 NONE}
+		BetterTitleScreen-1.14.4-1.7.jar Better Title Screen {bettertitlescreen@1.14.4-1.7 NONE}
+		xnet-1.14-1.8.7-alpha.jar XNet {xnet@1.14-1.8.7-alpha NONE}
+		CookingForBlockheads_1.14.4-7.4.4.jar Cooking for Blockheads {cookingforblockheads@7.4.4 NONE}
+		Controlling-5.0.6.jar Controlling {controlling@5.0.6 NONE}
+		ReAuth-1.14-3.8.0.jar ReAuth {reauth@3.8.0 NONE}
+		Placebo-1.14.4-2.3.5.jar Placebo {placebo@2.3.5 NONE}
+		globaldatapack-1.14.4-1.2.1.jar Dark Roleplay - Global Datapacks {globaldatapack@1.14.4-1.2 NONE}
+		rangedpumps-0.6.1.jar Ranged Pumps {rangedpumps@0.6.1 NONE}
+		Fence+Jumper-1.14.4-1.0.8.jar FenceJumper {fencejumper@version NONE}
+		NomadicTents-1.14.4-10.1.1.jar Nomadic Tents {nomadictents@10.1.1 NONE}
+		WitherSkeletonTweaks-1.14.4-3.1.0.jar Wither Skeleton Tweaks {wstweaks@3.1.0 NONE}
+		Bookshelf-1.14.4-4.4.71.jar Bookshelf {bookshelf@4.4.71 NONE}
+		Reliquary-1.14.4-1.3.4.947.jar Reliquary {xreliquary@1.14.4-1.3.4.947 NONE}
+		randompatches-1.14.4-1.21.0.0.jar RandomPatches {randompatches@1.14.4-1.21.0.0 NONE}
+		buildinggadgets-3.1.1b.jar Building Gadgets {buildinggadgets@3.1.1b NONE}
+		DarkUtilities-1.14.4-2.0.13.jar Dark Utilities {darkutils@2.0.13 NONE}
+		Apotheosis-1.14.4-2.4.4.jar Apotheosis {apotheosis@2.4.4 NONE}
+		ProgressiveBosses-2.1.4.jar Progressive Bosses {progressivebosses@2.1.4 NONE}
+		ironshulkerboxes-1.14.4-3.1.12.jar Iron Shulker Boxes {ironshulkerbox@1.14.4-3.1.12 NONE}
+		Hwyla-forge-1.10.6-B67_1.14.4.jar Waila {waila@version NONE}
+		WaterStrainer-1.14.4-7.0.2.jar Water Strainer {waterstrainer@1.14.4-7.0.2 NONE}
+		SnowRealMagic-1.14.4-1.5.2.jar Snow! Real Magic! {snowrealmagic@1.5.2 NONE}
+		CarryOn+MC1.14.4+v1.12.4.jar Carry On {carryon@1.12.4 NONE}
+		Paraglider-1.14.4-1.1.0.2.jar Paraglider {paraglider@1.1.0.2 NONE}
+		shetiphiancore-1.14-3.6.1.jar ShetiPhian-Core {shetiphiancore@3.6.1 NONE}
+		nmdar_1.14-3.8.jar Named Areas {nmdar@3.8 NONE}
+		discholder-1.1a.jar Disc Holder {discholder@1.1a NONE}
+		refinedstorage-1.7.3.jar Refined Storage {refinedstorage@1.7.3 NONE}
+		AirHop-v1.2-1.14.4.jar Air Hop {airhop@1.2 NONE}
+		mcw-bridges-1.0.4-mc1.14.4.jar Macaw's Bridges {mcwbridges@1.0.4 NONE}
+		industrial-foregoing-1.14.4-2.1.2-582ea8b.jar Industrial Foregoing {industrialforegoing@2.1.2 NONE}
+		dwmh-1.14.4-3.1.1.jar Dude! Where's my Horse? {dwmh@1.14.4-3.1.1 NONE}
+		cndtpd_1.14-1.0.jar Conduits Prevent Drowned {cndtpd@1.0 NONE}
+		endertanks-1.14-1.7.2.jar EnderTanks {endertanks@1.7.0 NONE}
+		AmbientSounds_v3.0.16_mc1.14.4.jar Ambient Sounds {ambientsounds@3.0.3 NONE}
+		BiomesOPlenty-1.14.4-9.0.0.262-universal.jar Biomes O' Plenty {biomesoplenty@1.14.4-9.0.0.259 NONE}
+		Blur-1.1.0-1.jar Blur {blur@1.1.0-1 NONE}
+		valhelsia_structures-14.0.3.jar Valhelsia Structures {valhelsia_structures@14.0.3 NONE}
+		LetSleepingDogsLie-1.14.4-1.1.0.jar Let Sleeping Dogs Lie {dogslie@1.1.0 NONE}
+		toughnessbar-4.1.jar Toughness Bar {toughnessbar@4.1 NONE}
+		grindst_1.14-1.2.jar Grindstone Sharper Tools {grindst@1.2 NONE}
+		fairylights-2.1.15-1.14.4.jar Fairy Lights {fairylights@2.1.15 NONE}
+		Bountiful-1.14.4-3.1.0.jar Bountiful {bountiful@1.14.4-3.1.0 NONE}
+		curios-FORGE-1.14.4-1.0.6.1.jar Curios API {curios@FORGE-1.14.4-1.0.6.1 NONE}
+		Patchouli-1.14.4-1.1-26.jar Patchouli {patchouli@1.14.4-1.1-25 NONE}
+		carrotslib-mc1.14.4-2.0.1.jar Carrots Lib {carrots@2.0.1 NONE}
+		AutoRegLib-1.4-35.jar AutoRegLib {arl@1.4-35 NONE}
+		rndbmflowers_1.14-1.1.jar Random Bone Meal Flowers {rndbmflowers@1.1 NONE}
+		rftoolsstorage-1.14-0.0.7-alpha.jar RFToolsStorage {rftoolsstorage@1.14-0.0.7-alpha NONE}
+		RandomThings-MC1.14.4-5.0.1.jar Random Things {randomthings@5.0.1 NONE}
+		extlights-1.8.jar Extended Lights {extlights@1.8 NONE}
+		TorchBandolier-1.14.4-1.3.2+7.jar Torch Bandolier {torchbandolier@1.3.2+7 NONE}
+		OreExcavation-1.6.147.jar Ore Excavation {oreexcavation@NONE NONE}
+		ss_1.14.4-1.0.jar Sleep Sooner {ss@1.0 NONE}
+		libnonymous-1.14.4-1.0.4.25.jar Libnonymous {libnonymous@1.0.4.25 NONE}
+		tombstone-4.3.2-1.14.4.jar Corail Tombstone {tombstone@4.3.2 NONE}
+		shulkerdt_1.14-1.1.jar Shulker Drops Two {shulkerdt@1.1 NONE}
+		AI-Improvements-1.14.4-0.3.0.jar AI-Improvements {aiimprovements@0.2.2 NONE}
+		netherpspr_1.14-3.0.jar Nether Portal Spread {netherpspr@3.0 NONE}
+		Charm-1.14.4-1.5.4.jar Charm {charm@1.14.4-1.5.4 NONE}
+		incubation-1.0.1-1.14.4.jar Incubation {incubation@1.0.1 NONE}
+		FastLeafDecay-v17.jar FastLeafDecay {fastleafdecay@v17 NONE}
+		CleanView-1.15.2-v1.jar CleanView {cleanview@1.15.2-v1 NONE}
+		inftrading_1.14-1.0.jar Infinite Trading {inftrading@1.0 NONE}
+		CraftPresence-1.14.4-1.6.1.jar CraftPresence {craftpresence@property(class java.lang.String, provider(?)) NONE}
+		SaveMyStronghold-1.14.4-1.0.0.jar Save My Stronghold! {savemystronghold@1.14.4-1.0.0 NONE}
+		Kiwi-1.14.4-2.6.3.jar Kiwi {kiwi@2.6.3 NONE}
+		AdFinders-1.14.4-3.0.4.0-build.0080.jar Advanced Finders {adfinders@3.0.4.0 NONE}
+		jmh_1.14.4-2.2.jar Just Mob Heads {jmh@2.2 NONE}
+		TrashSlot_1.14.4-10.4.8.jar TrashSlot {trashslot@10.4.8 NONE}
+		torchslabmod-1.14.4_v1.5.jar Torch Slab Mod {torchslabmod@1.5 NONE}
+		EquipmentTooltips-1.14.4-1.3.2+10.jar Equipment Tooltips {equipmenttooltips@1.3.2+10 NONE}
+		mining-helmet-1.14.4-1.0.8.jar Mining Helmet {mining_helmet@1.0.8 NONE}
+		Berry-Good-1.14.4-v1.0.3.jar Berry Good {berry_good@1.0.3 NONE}
+		bambooblocks-1.2.12.jar Bamboo Blocks {bambooblocks@1.2.11 NONE}
+		platforms-1.14-1.5.1.jar Platforms {platforms@1.5.0 NONE}
+		PersistentBits-1.14.4-2.0.2.jar Persistent Bits {persistentbits@2.0.2 NONE}
+		jei-1.14.4-6.0.0.27.jar Just Enough Items {jei@6.0.0.27 NONE}
+		Druidcraft-1.14-0.3.1.jar Druidcraft {druidcraft@0.3.1 NONE}
+		AttributeFix-1.14.4-3.0.3.jar AttributeFix {attributefix@3.0.3 NONE}
+		caelus-FORGE-1.14.4-1.0.1.2.jar Caelus API {caelus@FORGE-1.14.4-1.0.1.2 NONE}
+		Upgrade-Aquatic-1.14.4-v1.4.10.jar Upgrade Aquatic {upgrade_aquatic@1.4.9 NONE}
+		bloomful-1.2.4.jar Bloomful {bloomful@1.2.3 NONE}
+		invtweaks-1.14.4-1.0.2.jar Inventory Tweaks Reborn {invtweaks@1.14.4-1.0.2 NONE}
+		extraboats-1.2.6-1.14.4.jar Extra Boats {extraboats@1.2.6 NONE}
+		ensorcellation-1.14.4-0.3.0b.jar Ensorcellation {ensorcellation@0.3.0b NONE}
+		create-mc1.14.4_v0.2.2a.jar Create {create@mc1.14-0.2.2a NONE}
+		Waystones_1.14.4-5.1.1.jar Waystones {waystones@5.1.1 NONE}
+		copypaste-1.4.jar Copy Paste {copypaste@1.4 NONE}
+		Clumps-4.0.1.jar Clumps {clumps@4.0.1 NONE}
+		journeymap-1.14.4-5.7.0b1.jar Journeymap {journeymap@1.14.4-5.7.0b1 NONE}
+		comforts-FORGE-1.14.4-2.0-beta6.jar Comforts {comforts@FORGE-1.14.4-2.0-beta6 NONE}
+		NaturesCompass-1.14.4-1.8.5.jar Nature's Compass {naturescompass@1.14.4-1.8.5 NONE}
+		guicompass_1.14-1.1.jar GUI Compass {guicompass@1.1 NONE}
+		decorative_blocks_6b.jar Decorative Blocks {decorative_blocks@1.6 NONE}
+		BotanyPots-1.14.4-1.0.10.jar BotanyPots {botanypots@1.0.10 NONE}
+		DungeonCrawl-1.14.4-1.6.3.jar Dungeon Crawl {dungeoncrawl@1.6.3 NONE}
+		curioofundying-FORGE-1.14.4-2.0.1.jar Curio of Undying {curioofundying@FORGE-1.14.4-2.0.1 NONE}
+		FarmingForBlockheads_1.14.4-5.3.2.jar Farming for Blockheads {farmingforblockheads@5.3.2 NONE}
+		cofh_core-1.14.4-0.3.1b.jar CoFH Core {cofh_core@0.3.1b NONE}
+		The-Endergetic-Expansion-1.14.4-v1.2.0.jar The Endergetic Expansion {endergetic@1.2.0 NONE}
+		BonsaiTrees-2.0.2.35.jar Bonsai Trees 2 {bonsaitrees2@2.0.2.35 NONE}
+		tntbrbedrock_1.14-1.1.jar TNT Breaks Bedrock {tntbrbedrock@1.1 NONE}
+		nhacampfire_1.14-1.5.jar No Hostiles Around Campfire {nhacampfire@1.5 NONE}
+		mcjtylib-1.14-3.5.17-alpha.jar McJtyLib {mcjtylib@1.14-3.5.17-alpha NONE}
+		ClickMachine-1.14.4-2.1.2.jar Click Machine {clickmachine@2.1.2 NONE}
+		Strange-1.14.4-1.0.0-beta.1.jar Strange {strange@1.14.4-1.0.0-beta.1 NONE}
+		ToastControl-1.14.4-2.2.0.jar Toast Control {toastcontrol@2.2.0 NONE}
+		CraftTweaker-1.14.4-5.0.1.165.jar CraftTweaker {crafttweaker@5.0.1.165 NONE}
+		rftoolspower-1.14-1.2.12-alpha.jar RFToolsPower {rftoolspower@1.14-1.2.12-alpha NONE}
+		extradisks-1.14.4-1.1.jar Extra Disks {extradisks@1.14.4-1.1 NONE}
+		swampexpansion-1.4.9.jar Swamp Expansion {swampexpansion@NONE NONE}
+		forge-1.14.4-28.2.3-universal.jar Forge {forge@28.2.3 NONE}
+		weakerspwbs_1.14-1.3.jar Weaker Spiderwebs {weakerspwbs@1.3 NONE}
+		ironchest-1.14.4-9.1.5.jar Iron Chests {ironchest@1.14.3-9.0.3 NONE}
+		infernalmobs-1.14.4.6.jar Infernal Mobs {infernalmobs@1.14.4.6 NONE}
+		CraftingTweaks_1.14.4-10.2.1.jar Crafting Tweaks {craftingtweaks@10.2.1 NONE}
+		forge-1.14.4-28.2.3-client.jar Minecraft {minecraft@1.14.4 NONE}
+		rftoolsutility-1.14-1.2.14-alpha.jar RFToolsUtility {rftoolsutility@1.14-1.2.14-alpha NONE}
+		itlt-1.14.4-1.0.2.jar It's the little things {itlt@1.14.4-1.0.2 NONE}
+		EnchantmentDescriptions-1.14.4-1.3.13.jar EnchantmentDescriptions {enchdesc@1.3.13 NONE}
+		swingthroughgrass-1.14.4-1.3.2.jar SwingThroughGrass {swingthroughgrass@1.14.4-1.3.2 NONE}
+		MouseTweaks-2.13-mc1.14.4.jar Mouse Tweaks {mousetweaks@2.13 NONE}
+		ToolBelt-1.14.4-1.12.5.jar Tool Belt {toolbelt@1.12.5 NONE}
+		titanium-1.14.4-2.2.10.jar Titanium {titanium@2.2.10 NONE}
+		ImmersiveEngineering-0.14-94.jar Immersive Engineering {immersiveengineering@0.14-94 NONE}
+		underwaterench_1.14-1.0.jar Underwater Enchanting {underwaterench@1.0 NONE}
+		AdLods-1.14.4-2.0.0.1-build.0078.jar Large Ore Deposits {adlods@2.0.0.1 NONE}
+		Ding-1.14.4-1.1.0.jar Ding {ding@1.1.0 NONE}
+		rftoolsbuilder-1.14-1.2.12-alpha.jar RFToolsBuilder {rftoolsbuilder@1.14-1.2.12-alpha NONE}
+		Quark-r2.0-212.jar Quark {quark@r2.0-212 NONE}
+		cyclepaintings_1.14-1.1.jar Cycle Paintings {cyclepaintings@1.1 NONE}
+		FastWorkbench-1.14.4-2.1.4.jar FastWorkbench {fastbench@2.1.4 NONE}
+		autumnity-1.0.0-1.14.4.jar Autumnity {autumnity@1.0.0 NONE}
+		StorageDrawers-1.14.4-6.0.7.jar Storage Drawers {storagedrawers@1.14.4-6.0.6 NONE}
+		performant-1.14.4-1.5.jar Performant {performant@1.5 NONE}
+		enderchests-1.14-1.5.1.jar EnderChests {enderchests@1.5.0 NONE}
+		themidnight-0.4.6.jar The Midnight {midnight@0.4.6 NONE}
+		jph_1.14.4-1.0.jar Just Player Heads {jph@1.0 NONE}
+		Dirt2Path-1.0.0.jar Dirt2Path {d2p@1.0.0 NONE}
+		dde_1.14.4-1.0.jar Dragon Drops Elytra {dde@1.0 NONE}
+		FastFurnace-1.14.4-2.2.4.jar FastFurnace {fastfurnace@2.2.4 NONE}
+		AppleSkin-mc1.14.4-forge-1.0.13.jar AppleSkin {appleskin@1.0.13 NONE}
+		solcarrot-1.14.4-1.9.4.jar Spice of Life: Carrot Edition {solcarrot@1.14.4-1.9.4 NONE}
+		FriendlyFire-1.14.4-3.0.1.jar FriendlyFire {friendlyfire@3.0.1 NONE}
+		XL-Food-Mod-1.14.4-2.2.2.jar XL Food Mod {xlfoodmod@2.2.2 NONE}
+		refinedstorageaddons-0.5.jar Refined Storage Addons {refinedstorageaddons@0.5 NONE}
+		CosmeticArmorReworked-1.14.4-v1b.jar CosmeticArmorReworked {cosmeticarmorreworked@1.14.4-v1b NONE}
+		SoundFilters-0.13_for_1.14.4.jar Sound Filters {soundfilters@0.13_for_1.14.4 NONE}
+		healingcf_1.14-1.7.jar Healing Campfire {healingcf@1.7 NONE}
+		xptome-1.14.4-v1.1.4.jar XP Tome {xpbook@v1.1.4 NONE}
+		DefaultOptions_1.14.4-10.2.7.jar Default Options {defaultoptions@10.2.7 NONE}
+	Launched Version: MultiMC5
+	LWJGL: 3.2.2 build 10
+	OpenGL: GeForce RTX 2070 SUPER/PCIe/SSE2 GL version 4.6.0 NVIDIA 442.74, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 8x Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz

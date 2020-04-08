@@ -1,0 +1,6 @@
+
+[General]
+	#The radius around the campfire in blocks where hostile mob spawns will be blocked.
+	#Range: 1 ~ 128
+	preventHostilesRadius = 48
+

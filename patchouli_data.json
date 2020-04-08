@@ -1,1 +1,28 @@
-{"bookGuiScale":0,"clickedVisualize":false,"bookData":{}}
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "mysticalworld:world_guide": {
+      "viewedEntries": [
+        "mysticalworld:metals/copper",
+        "mysticalworld:metals/quicksilver",
+        "mysticalworld:metals/modifiers/extension",
+        "mysticalworld:metals/modifiers/healthy",
+        "mysticalworld:metals/modifiers/serendipity",
+        "mysticalworld:metals/modifiers/smiting_blessed",
+        "mysticalworld:creatures/silkworm"
+      ],
+      "bookmarks": [],
+      "history": [
+        "mysticalworld:creatures/silkworm",
+        "mysticalworld:metals/modifiers/smiting_blessed",
+        "mysticalworld:metals/modifiers/serendipity",
+        "mysticalworld:metals/modifiers/healthy",
+        "mysticalworld:metals/modifiers/extension",
+        "mysticalworld:metals/quicksilver",
+        "mysticalworld:metals/copper"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+
+[pump]
+	#Whether the pump uses energy to work
+	useEnergy = true
+	#Replaces the liquid that is removed with stone to reduce lag
+	replaceLiquidWithStone = true
+	#The range of the pump
+	#Range: 0 ~ 1024
+	range = 64
+	#The capacity of the internal pump tank
+	#Range: > 1000
+	tankCapacity = 32000
+	#Energy drained when draining liquid
+	#Range: > 0
+	energyUsagePerDrain = 100
+	#The capacity of the energy storage
+	#Range: > 0
+	energyCapacity = 32000
+	#The interval in ticks for when to move on to the next block (higher is slower)
+	#Range: 0 ~ 1024
+	speed = 8
+	#Energy drained when moving to the next block
+	#Range: > 0
+	energyUsagePerMove = 0
+
