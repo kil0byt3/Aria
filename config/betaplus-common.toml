@@ -1,0 +1,41 @@
+
+["General Options"]
+	#Enables Beta+ (default: TRUE *DOES NOTHING*)
+	enableMod = true
+
+["World Options"]
+	#The "Sea Level" of the world, changes may cause issues! (default: 63)
+	#Range: 1 ~ 128
+	seaLevel = 63
+	#An *ODD* Integer that determines the size of smoothing for deepened oceans, larger values increase process time
+	#MUST BE ODD!!! (default: 7)
+	#Range: 1 ~ 11
+	smoothingSize = 7
+	#Threshold for "cold" biomes to spawn in range [0,1) (default: 0.5)
+	#Range: 0.0 ~ 1.0
+	coldTh = 0.5
+	#Defines biome size in Beta+, larger values increase biome size
+	#(For faithful Beta 1.7.3 biome size: 39.999999404)
+	#Range: 1.0 ~ 256.0
+	biomeScale = 39.999999404
+	#Defines the scale of humidity noise in relation to other factors
+	#(For faithful Beta 1.7.3 biome size: 2)
+	humidityScale = 2.0
+	#Noise scaling factor in range [600, 800) (default: 684.412)
+	#Range: 600.0 ~ 800.0
+	noiseFactor = 684.412
+	#Scale value for increasing ocean depth (default: 3.25)
+	#Range: 1.0 ~ 4.0
+	oceanDepthScale = 3.25
+	#Minimum depth for Oceans to be considered Deep Oceans (default: 20)
+	#Range: 12 ~ 32
+	depthTh = 20
+
+["Biome List Mappings"]
+	#List of Possible Island Biomes
+	islandList = []
+	#List of Possible Normal Frozen Biomes
+	frozenList = []
+	#List of Possible Hilly Frozen Biomes
+	frozenHillList = []
+

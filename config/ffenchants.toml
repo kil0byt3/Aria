@@ -1,0 +1,23 @@
+
+[ffeconfig]
+	#Enable Searing
+	enableSearing = true
+	#Enable Poison Aspect
+	enablePoisonAspect = true
+	#Enable Vampiric
+	enableVampiric = true
+	#Enable Weighted
+	enableCrushingBlade = true
+	#Enable Pillaging
+	enablePillaging = true
+	#Enable Sharpshooter
+	enableSharpshooter = true
+	#Enable Wither Aspect
+	enableWitherAspect = true
+	#Enable Steadfast
+	enableSteadfast = true
+	#Enable Bloodlust
+	enableBloodlust = true
+	#Enable Torrent
+	enableTorrent = true
+

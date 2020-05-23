@@ -2,18 +2,18 @@
 [core]
 
 	[core.general]
-		#If mod compatibility loader should crash hard if errors occur in that process.
-		crashOnModCompatCrash = false
-		#Set 'true' to enable development debug mode. This will result in a lower performance!
-		debug = false
-		#The anonymous id used by the analytics service.
-		anonymousAnalyticsID = "382ff40c-fdb3-4759-a3e2-9adf7fd658a7"
-		#If the recipe loader should crash when finding invalid recipes.
-		crashOnInvalidRecipe = false
 		#If an anonymous mod startup analytics request may be sent to our analytics service.
 		analytics = true
+		#The anonymous id used by the analytics service.
+		anonymousAnalyticsID = "382ff40c-fdb3-4759-a3e2-9adf7fd658a7"
+		#Set 'true' to enable development debug mode. This will result in a lower performance!
+		debug = false
 		#If the version checker should be enabled.
 		versionChecker = true
+		#If the recipe loader should crash when finding invalid recipes.
+		crashOnInvalidRecipe = false
+		#If mod compatibility loader should crash hard if errors occur in that process.
+		crashOnModCompatCrash = false
 
 [general]
 
