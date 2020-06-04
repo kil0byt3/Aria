@@ -64,4 +64,10 @@ alarmSoundVolume = 0.3
 cameraSpeed = 2.0
 #Should the sentry/inventory scanner/laser block/etc. ignore players and entities that are invisible?
 respect_invisibility = false
+#Should reinforced blocks' textures be slightly darker than their vanilla counterparts?
+reinforced_block_tint = true
+#Are all mines craftable?
+ableToCraftMines = true
+#Display owner face on retinal scanner?
+retinalScannerFace = true
 

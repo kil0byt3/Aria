@@ -16,6 +16,8 @@
 	[Building.BlockOfRottenFlesh]
 		#If true, a block of rotten flesh can be composted.
 		Compostable = true
+		#Chance (out of 10) that the crop planted above a block of rotten flesh will get a growth boost each tick. (Default: 3
+		GrowChance = 3
 
 [Automation]
 	#A storage block for gunpowder. It obeys gravity and dissolves in lava.
@@ -36,12 +38,22 @@
 	"CurseBreak enabled" = true
 	#Tools with the Magnetic enchantment automatically pick up drops.
 	"Magnetic enabled" = true
+	#An item with the Leeching curse restores your hunger at the expense of durability.
+	"Leeching enabled" = true
 
 	[Enchanting.Homing]
 		#Range (in blocks) that the enchanted tool will detect ore/wood/stone.
 		"Detection range" = 8
 		#Percentage (where 1.0 is 100%) of damage given to the tool every time it detects a block.
 		"Damage multiplier" = 0.015
+
+	[Enchanting.Leeching]
+		#Amount of hunger restored to the player when the item is damaged.
+		"Hunger restored" = 1
+		#Amount of durability damage given to the item when restoring hunger.
+		"Durability damage" = 3
+		#Chance (out of 1.0) of item taking durability damage when player is hungry.
+		Chance = 0.05
 
 	[Enchanting.CurseBreak]
 		#Number of levels required to remove a curse from an item.
@@ -88,6 +100,9 @@
 	#Animals will heal within range of a beacon with the regeneration effect.
 	#Monsters will be weakened within range of a beacon with the strength effect.
 	"MobsAffectedByBeacon enabled" = true
+	#Filled cauldrons can be used to clean certain blocks.
+	"CauldronCleansThings enabled" = true
+	#Parrots stay on your shoulder when jumping and falling. Crouch to make them dismount.
 	"ParrotsStayOnShoulder enabled" = true
 
 	[Tweaks.ComposterImprovements]
@@ -110,6 +125,16 @@
 	[Tweaks.SpongesReduceFallDamage]
 		#Percentage (where 1.0 = 100%) of damage absorbed by sponge blocks.
 		"Damage absorbed" = 0.75
+
+	[Tweaks.CauldronCleansThings]
+		#If Quark's Quilted Wool module is enabled, colored quilted wool becomes white quilted wool.
+		"Clean quilted wool" = true
+		#Sticky pistons become normal pistons.
+		"Clean sticky pistons" = true
+		#Colored wool becomes white wool.
+		"Clean colored wool" = true
+		#Colored carpet becomes white carpet.
+		"Clean colored carpet" = true
 
 	[Tweaks.AmbientMusicImprovements]
 		#If true, the six Creative music tracks may play in survival mode.
@@ -135,6 +160,9 @@
 	#Extract enchantments from any enchanted item into an empty book.
 	#The enchantments are weakened in the process and the original item is destroyed.
 	"ExtractEnchantments enabled" = true
+	#Add an Eye of Ender to a Bound Compass on an anvil to fix its position across dimensions.
+	#This requires the Compass Binding module to be enabled.
+	"DimensionalCompass enabled" = true
 
 	[Smithing.DecreaseRepairCost]
 		#The tool repair cost will be decreased by this number.
@@ -149,6 +177,10 @@
 		"Base XP cost" = 1
 		#Enchantments with a single level or at level 1 will be extracted.
 		"Allow Level 1 enchantments" = true
+
+	[Smithing.DimensionalCompass]
+		#XP cost of combining an eye of ender with the bound compass.
+		"XP cost" = 1
 
 	[Smithing.PigIronIncreasesDurability]
 		#Percentage (where 1.0 = 100%) durability repaired when using pig iron nuggets.
@@ -301,4 +333,14 @@
 	[Decoration.BookshelfChests]
 		#List of item IDs that may be placed in a bookshelf chest.
 		"Valid books" = ["minecraft:book", "minecraft:enchanted_book", "minecraft:written_book", "minecraft:writable_book", "minecraft:knowledge_book", "minecraft:paper", "minecraft:map", "minecraft:filled_map", "quark:ancient_tome"]
+
+[Mobs]
+	"ParrotsOnEndRods enabled" = true
+	#Configurable delay chance between parrot mimic sounds.
+	"ParrotMimicDelay enabled" = true
+
+	[Mobs.ParrotMimicDelay]
+		#Chance (1 in X) of a parrot mimicking a mob every tick.
+		#Vanilla is 50.
+		"Delay chance" = 200
 

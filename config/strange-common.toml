@@ -109,12 +109,15 @@
 		"Play music" = true
 		#If true, background ambient sounds play in biomes, caves and other dimensions.
 		"Play ambient sounds" = true
+		#Volume of ambient sounds is multiplied by this amount.
+		"Volume multiplier" = 1.0
 
 [Outerlands]
 	#Illusioners may spawn in Dark Forests in the Outerlands.
 	#If Outerlands is disabled, Illusioners may spawn anywhere.
 	"IllusionersInDarkForest enabled" = true
-	#A distant area of the overworld with more difficult mobs and better treasure.Can be found by completing quests for a scrollkeeper villager.
+	#A distant area of the overworld with more difficult mobs and better treasure.
+	#Can be found by completing quests for a scrollkeeper villager.
 	"Outerlands enabled" = true
 
 	[Outerlands.IllusionersInDarkForest]
@@ -169,11 +172,16 @@
 
 	[Totems.TotemOfPreserving]
 		#The totem will stay suspended in the air above your death position.
+		#'Save items on death' must be enabled for this to function.
 		"No gravity" = true
 		#When you die, your items will be stored in a totem at the place where you died.
+		#If 'Only save items when holding a totem' is disabled, then a new totem will be spawned whenever you die.
 		"Save items on death" = true
-		#The totem will never despawn.
+		#The totem will never despawn.  'Save items on death' must be enabled for this to function.
 		"No despawn" = true
+		#Only store items on death if you're holding an empty totem in your inventory.
+		#'Save items on death' must be enabled for this to function.
+		"Only save items when holding a totem" = true
 
 	[Totems.TotemOfShielding]
 		#Player damage is multiplied by this amount before being transferred to the totem.
@@ -215,8 +223,6 @@
 		"Allow compasses to detect stone circles" = true
 		#Biomes that stone circles may generate in.
 		"Allowed biomes" = ["plains", "sunflower_plains", "badlands", "badlands_plateau", "wooded_badlands_plateau", "desert", "desert_lakes", "beach", "river", "savanna", "savanna_plateau", "snowy_tundra", "snowy_beach", "frozen_river", "swamp"]
-		#If true, stone circle maps will be added to village chests.
-		"Add stone circle maps to loot" = true
 		#Distance between stone cicles. For reference, shipwrecks are 16.
 		Distance = 20
 

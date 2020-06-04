@@ -5,11 +5,19 @@
 	log_player_grave = true
 	#Prevents death outside of world borders [false/true|default:false]
 	prevent_death_outside_world = false
+	#Cooldown in minutes to use the command tbbind [-1..1440|default:-1]
+	#Range: -1 ~ 1440
+	cooldown_teleport_bind = -1
 	#Allows player's graves to appear in water [false/true|default:true]
 	allow_grave_in_water = true
 	#The chance that creatures appear after the contents of a grave are retrieved [0..100|default:0]
 	#Range: 0 ~ 100
 	chance_mob_on_grave_recovery = 0
+	#Fishing treasures can only be found in open water [false/true|default:true]
+	fishing_treasure_in_open_water = true
+	#Cooldown in minutes to use the command tbteleportdeath [-1..1440|default:-1]
+	#Range: -1 ~ 1440
+	cooldown_teleport_death = -1
 	#The chance that some items are lost on death [0..100|default:0]
 	#Range: 0 ~ 100
 	chance_loss_on_death = 0
@@ -27,6 +35,8 @@
 	teleport_dim = true
 	#Beneficial effects that can't used by certain features such as ankh of pray, lollipop, scroll of preservation, alchemy perk and magic siphon enchantment
 	unhandled_beneficial_effects = ["tombstone:ghostly_shape", "tombstone:preservation", "tombstone:exorcism"]
+	#Only stackable items can be lost on death [false/true|default:true]
+	loss_on_death_only_for_stackable_items = true
 	#Whether to restore beneficial effects after a player dies [false/true|default:true]
 	restore_effects_on_death = false
 	#The radius in which items should be collected when a grave is spawned [1..10|default:5]
@@ -51,13 +61,15 @@
 	unhandled_harmful_effects = ["minecraft:nausea"]
 	#Enables PvP mode, which allows players to open graves of players they kill [false/true|default:false]
 	pvp_mode = false
-	#Cooldown in minutes to use the command tbrequestteleport [-1..1440|default:15]
+	#Cooldown in minutes to use the command tbrequestteleport [-1..1440|default:-1]
 	#Range: -1 ~ 1440
 	cooldown_request_teleport = -1
 	#Whether to handle player death [false/true|default:true]
 	handle_player_death = true
 	#Whether to always give players a Grave's Key on death [false/true|default:true]
 	grave_key_on_death = true
+	#Only abandoned graves can have losses of items (based on the decay_time) [false/true|default:true]
+	loss_on_death_only_for_abandoned_grave = true
 
 #Allows to define the conditions for a village siege to begin
 [village_siege]
@@ -94,17 +106,21 @@
 	cooldown_reset_perk = 20
 	#Allows the purification effect to clear neutral effects [false/true|default:true]
 	purification_affect_neutral_effects = true
+	#The structures that can't be discovered by lost tablets
+	lost_tablet_denied_structures = []
 	#Chance to receive a random beneficial spell effect when praying near a grave [0..100|default:40]
 	#Range: 0 ~ 100
 	chance_pray_reward = 40
-	#Allows lost tablets to find locations outside the current world [false/true|default:true]
-	allow_tablet_search_outside_world = true
 	#Chance on 1000 that a soul appears on a grave [0..1000|default:100]
 	#Range: 0 ~ 1000
 	chance_soul = 100
 	#Time in minutes to check if a soul appears on a grave [10..10000|default:30]
 	#Range: 10 ~ 10000
 	time_soul = 30
+	#Allows lost tablets to find locations outside the current world [false/true|default:true]
+	lost_tablet_search_outside_world = true
+	#Allows lost tablets to find modded structures [false/true|default:true]
+	lost_tablet_modded_structure = true
 
 #Allows to customize or disable the enchantments
 [enchantments]
@@ -126,7 +142,7 @@
 	#Enables to backup automatically dead familiars [false/true|default:true]
 	recovery_familiar_enable = true
 	#Time in minutes between players' backups [10..1000|default:40]
-	#Range: 10 ~ 1000
+	#Range: 5 ~ 1000
 	recovery_player_timer = 40
 	#Backup players on death [false/true|default:false]
 	backup_on_death = false
@@ -160,6 +176,8 @@
 [compatibility]
 	#Keeps the cosmetic armor when you die [false/true|default:true]
 	keep_cosmetic_armor = true
+	#Disables to disenchant items from tetra mod [false/true|default:false]
+	disable_disenchantment_for_tetra = false
 	#Allows to auto-equip the slots from Curio mod [false/true|default:true]
 	allow_curio_auto_equip = true
 
