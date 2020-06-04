@@ -335,9 +335,9 @@
 		"Valid books" = ["minecraft:book", "minecraft:enchanted_book", "minecraft:written_book", "minecraft:writable_book", "minecraft:knowledge_book", "minecraft:paper", "minecraft:map", "minecraft:filled_map", "quark:ancient_tome"]
 
 [Mobs]
-	"ParrotsOnEndRods enabled" = true
 	#Configurable delay chance between parrot mimic sounds.
 	"ParrotMimicDelay enabled" = true
+	"ParrotsOnEndRods enabled" = true
 
 	[Mobs.ParrotMimicDelay]
 		#Chance (1 in X) of a parrot mimicking a mob every tick.

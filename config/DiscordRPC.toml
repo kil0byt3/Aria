@@ -1,0 +1,19 @@
+
+#Discord RichPresence Config File
+[Rich-Presence]
+	#First line of Rich Presence
+	Client-Name = "Aria"
+	#Placeholders:
+	#%ip%  Server IP
+	Server-Text = "Playing on a server"
+	#Setting this to true disables name changing through GUI
+	Disable-Name-changing = false
+	#No placeholders supported, Text that shows when you are in the main menu
+	Main-Menu = "Hanging out in the menu"
+	#Placeholders:
+	#%coords% (X:??? Y:??? Z:???)
+	#%world% World name
+	Singleplayer-Text = "Playing in singleplayer"
+	#Do you want to use development commands?
+	Dev-Commands = true
+

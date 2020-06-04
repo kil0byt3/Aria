@@ -4,3 +4,11 @@ logs/
 crash-reports/
 
 .mixin.out/
+
+saves/
+
+usercache.json
+
+journeymap/data/
+
+journeymap/journeymap.log

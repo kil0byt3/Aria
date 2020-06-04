@@ -2,7 +2,7 @@
 #General client config options
 [general]
 	#Controls whether the to hint the player to reload component groups on login or not
-	showComponentGroupsMessage = true
+	showComponentGroupsMessage = false
 
 #General GUI config options
 [generalGUI]
